@@ -62,7 +62,7 @@ for link in tqdm(links):
         research_topics_heading = soup.find("b", string="Research Topics:")
         ul_element = research_topics_heading.next_sibling
 
-        # Find the next UL after research  area heading
+        # Find the next UL after the research area heading
         if research_topics_heading:
             for ul_element in research_topics_heading.next_siblings:
                 if ul_element.name == "ul":
@@ -79,8 +79,6 @@ for link in tqdm(links):
         research_topics.append(li_text)
     except:
         research_topics.append('')
-
-
 
 
 chart = pd.DataFrame({

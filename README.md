@@ -39,10 +39,6 @@ pip install beautifulsoup4
 
 ```
 ```bash
-pip install beautifulsoup4
-
-```
-```bash
 pip install fake-headers
 
 ```
@@ -79,9 +75,9 @@ In the future, I plan to extend the capabilities of this web scraper by integrat
 These future enhancements will transform this web scraper into a powerful tool for both students and researchers, facilitating better engagement and collaboration within the academic community.
 
 
-## The scraped data will be saved in a CSV file.
+The scraped data will be saved in a CSV file.
 
-Legal Notice
+## Legal Notice
 Please note that web scraping should be performed responsibly and ethically. Before using this scraper, ensure that you are complying with the website's terms of service and legal regulations regarding web scraping. Do not send mass requests to servers or engage in any activity that may disrupt the normal operation of the website.
 
 ## Disclaimer
