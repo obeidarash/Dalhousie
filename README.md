@@ -64,11 +64,7 @@ python dalhousie
 
 In the future, I plan to extend the capabilities of this web scraper by integrating machine learning techniques to provide more advanced analysis and insights. Some of the planned enhancements include:
 
-- **Automated Email Generation**: I aim to develop a feature that will use the collected professor data to send automated emails for various purposes, such as collaboration opportunities, event invitations, or research inquiries.
-
 - **Professor Ranking**: Utilizing machine learning algorithms, I plan to implement a ranking system that will help identify and recognize the best professors based on specific criteria or skills. This can assist students and researchers in making informed choices when seeking academic guidance or collaboration.
-
-- **Research Area Analysis**: I intend to use natural language processing (NLP) techniques to analyze the research areas of professors more deeply. This will enable me to identify trends, emerging topics, and potential areas of collaboration within the faculty.
 
 - **Recommendation System**: By employing recommendation algorithms, I aspire to build a system that suggests professors to students or researchers based on their interests, skills, and academic goals.
 
