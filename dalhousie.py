@@ -14,7 +14,7 @@ response_base = requests.get(url_base, headers=headers.generate())
 soup_base = BeautifulSoup(response_base.text, 'html.parser')
 hrefs = soup_base.find_all('a')
 
-# For all the links related to the porffesors
+# For all the links related to the professors
 links = []
 for a in hrefs: 
     href = a.get('href')
@@ -24,7 +24,7 @@ for a in hrefs:
             links.append(href)
 
 
-# Pop the first two faculty page on the header, it should be on 3
+# Pop the first two faculty pages on the header, it should be on 3
 del links[:3]
 
 for link in tqdm(links):
@@ -57,12 +57,12 @@ for link in tqdm(links):
     except:
         telephone.append('')
 
-    # Find research aresas if exist.
+    # Find research areas if exist.
     try:
         research_topics_heading = soup.find("b", string="Research Topics:")
         ul_element = research_topics_heading.next_sibling
 
-        # Find the next UL after reasearch area heading
+        # Find the next UL after research  area heading
         if research_topics_heading:
             for ul_element in research_topics_heading.next_siblings:
                 if ul_element.name == "ul":

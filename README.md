@@ -25,11 +25,28 @@ You can install these packages using pip:
 
 ```bash
 pip install pandas
-pip install requests
-pip install tqdm
-pip install beautifulsoup4
-pip install fake-headers
 ```
+```bash
+pip install requests
+
+```
+```bash
+pip install tqdm
+
+```
+```bash
+pip install beautifulsoup4
+
+```
+```bash
+pip install beautifulsoup4
+
+```
+```bash
+pip install fake-headers
+
+```
+
 ## Usage
 
 Clone this repository to your local machine:
