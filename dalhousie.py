@@ -6,9 +6,10 @@ import time
 from fake_headers import Headers
 
 class DalFacultyScraper:
-    def __init__(self):
+    def __init__(self, file_name = time.time()):
         self.headers = Headers(browser="chrome", os='win', headers=True)
         self.telephone, self.email, self.job_title, self.prefix, self.last_name, self.first_name, self.research_topics = [], [], [], [], [], [], []
+        self.file_name = '{}.csv'.format(file_name)
 
     def scrape_faculty_data(self):
         url_base = 'https://www.dal.ca/faculty/computerscience/faculty-staff.html'
@@ -80,7 +81,7 @@ class DalFacultyScraper:
             except:
                 self.research_topics.append('')
 
-    def create_csv(self, file_name = time.time()):
+    def create_csv(self):
         chart = pd.DataFrame({
             'Title': self.job_title,
             'Name': self.first_name,
@@ -90,9 +91,8 @@ class DalFacultyScraper:
             'Research Topics': self.research_topics,
         })
 
-        name = '{}.csv'.format(file_name)
-        chart.to_csv(name, index=False)
-        print("File Created: {}".format(name))
+        chart.to_csv(self.file_name, index=False)
+        print("File Created: {}".format(self.file_name))
 
 
 
