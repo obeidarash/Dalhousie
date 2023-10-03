@@ -71,7 +71,7 @@ cd dalhousie
 
 Run the scraper script:
 ```bash
-python dalhousie
+python dalhousie.py
 ```
 
 ## Future Enhancements
