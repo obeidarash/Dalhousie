@@ -20,6 +20,20 @@ Before running this scraper, ensure you have the following Python packages insta
 - tqdm
 - Fake-Headers
 
+## Version 1 (Original):
+
+- The original code is a script without a specific structure.
+- It consists of a series of statements executed sequentially.
+- It scrapes faculty data from Dalhousie University's Computer Science department website.
+- Data extraction and saving are done without using classes or methods.
+
+
+## Version 2 (Updated):
+- The updated version introduces a class-based structure.
+- It encapsulates related functionality into methods within a class called DalFacultyScraper.
+- Data scraping and saving are organized within this class.
+- The code is more modular, making it easier to understand and maintain.
+
 
 You can install these packages using pip:
 
