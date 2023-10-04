@@ -82,15 +82,15 @@ class DalFacultyScraper:
                 self.research_topics.append('')
 
     def create_csv(self):
-        chart = pd.DataFrame({
+        df = {
             'Title': self.job_title,
             'Name': self.first_name,
             'Last Name': self.last_name,
             'Email': self.email,
             'Prefix': self.prefix,
             'Research Topics': self.research_topics,
-        })
-
+        }
+        chart = pd.DataFrame(df)
         chart.to_csv(self.file_name, index=False)
         print("File Created: {}".format(self.file_name))
 
