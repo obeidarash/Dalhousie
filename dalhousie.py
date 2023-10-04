@@ -27,7 +27,7 @@ class DalFacultyScraper:
                     links.append(href)
 
         # Pop the first two faculty pages on the header, it should be on 3
-        del links[:3]
+        del links[:55]
 
         for link in tqdm(links):
             response = requests.get(link, headers=self.headers.generate())
@@ -83,11 +83,11 @@ class DalFacultyScraper:
 
     def create_csv(self):
         df = {
-            'Title': self.job_title,
+            'Prefix': self.prefix,
             'Name': self.first_name,
             'Last Name': self.last_name,
+            'Title': self.job_title,
             'Email': self.email,
-            'Prefix': self.prefix,
             'Research Topics': self.research_topics,
         }
         chart = pd.DataFrame(df)

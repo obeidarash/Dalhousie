@@ -11,6 +11,7 @@ if __name__ == "__main__":
     file = scraper.file_name
 
     if os.path.exists(file):
-        subprocess.Popen(['start', file], shell=True)
+        # subprocess.Popen(['start', file], shell=True)
+        print(pd.read_csv(file).head())
     else:
         print(f"The file '{file}' does not exist.")
